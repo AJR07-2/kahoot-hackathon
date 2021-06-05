@@ -62,11 +62,16 @@ struct ContentView: View {
                 Image("party")
                     .resizable()
                     .frame(width: 400, height: 400)
+                    .animation(.easeInOut(duration: 3000))
                 Text("Your score is \(quiz.score)")
+                
                 Button(action: {
-                    
+                    quiz.quizFinished = false
+                    quiz.currentQuestion = 0
+                    showingWrong = false
+                    showingCorrect = false
                 }, label: {
-                    Text("Button")
+                    Text("Retry")
                 })
             }
         }
