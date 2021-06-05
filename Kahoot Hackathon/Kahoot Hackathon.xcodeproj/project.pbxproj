@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AFD0CDD266B170F000EFAE3 /* Kahoot_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */; };
+		3AFD0CDF266B170F000EFAE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CDE266B170F000EFAE3 /* ContentView.swift */; };
+		3AFD0CE1266B1712000EFAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFD0CE0266B1712000EFAE3 /* Assets.xcassets */; };
+		3AFD0CE4266B1712000EFAE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFD0CE3266B1712000EFAE3 /* Preview Assets.xcassets */; };
+		3AFD0CEC266B1758000EFAE3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CEB266B1758000EFAE3 /* Quiz.swift */; };
+		3AFD0CF0266B1DB3000EFAE3 /* ResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CEF266B1DB3000EFAE3 /* ResultSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AFD0CD9266B170F000EFAE3 /* Kahoot Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kahoot Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kahoot_HackathonApp.swift; sourceTree = "<group>"; };
+		3AFD0CDE266B170F000EFAE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AFD0CE0266B1712000EFAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AFD0CE3266B1712000EFAE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AFD0CE5266B1712000EFAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFD0CEB266B1758000EFAE3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		3AFD0CEF266B1DB3000EFAE3 /* ResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AFD0CD6266B170F000EFAE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AFD0CD0266B170F000EFAE3 = {
+			isa = PBXGroup;
+			children = (
+				3AFD0CDB266B170F000EFAE3 /* Kahoot Hackathon */,
+				3AFD0CDA266B170F000EFAE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AFD0CDA266B170F000EFAE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD0CD9266B170F000EFAE3 /* Kahoot Hackathon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AFD0CDB266B170F000EFAE3 /* Kahoot Hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */,
+				3AFD0CDE266B170F000EFAE3 /* ContentView.swift */,
+				3AFD0CEF266B1DB3000EFAE3 /* ResultSheet.swift */,
+				3AFD0CEB266B1758000EFAE3 /* Quiz.swift */,
+				3AFD0CE0266B1712000EFAE3 /* Assets.xcassets */,
+				3AFD0CE5266B1712000EFAE3 /* Info.plist */,
+				3AFD0CE2266B1712000EFAE3 /* Preview Content */,
+			);
+			path = "Kahoot Hackathon";
+			sourceTree = "<group>";
+		};
+		3AFD0CE2266B1712000EFAE3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD0CE3266B1712000EFAE3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AFD0CD8266B170F000EFAE3 /* Kahoot Hackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFD0CE8266B1712000EFAE3 /* Build configuration list for PBXNativeTarget "Kahoot Hackathon" */;
+			buildPhases = (
+				3AFD0CD5266B170F000EFAE3 /* Sources */,
+				3AFD0CD6266B170F000EFAE3 /* Frameworks */,
+				3AFD0CD7266B170F000EFAE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kahoot Hackathon";
+			productName = "Kahoot Hackathon";
+			productReference = 3AFD0CD9266B170F000EFAE3 /* Kahoot Hackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AFD0CD1266B170F000EFAE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3AFD0CD8266B170F000EFAE3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 3AFD0CD4266B170F000EFAE3 /* Build configuration list for PBXProject "Kahoot Hackathon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AFD0CD0266B170F000EFAE3;
+			productRefGroup = 3AFD0CDA266B170F000EFAE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AFD0CD8266B170F000EFAE3 /* Kahoot Hackathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AFD0CD7266B170F000EFAE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFD0CE4266B1712000EFAE3 /* Preview Assets.xcassets in Resources */,
+				3AFD0CE1266B1712000EFAE3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AFD0CD5266B170F000EFAE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFD0CF0266B1DB3000EFAE3 /* ResultSheet.swift in Sources */,
+				3AFD0CDF266B170F000EFAE3 /* ContentView.swift in Sources */,
+				3AFD0CDD266B170F000EFAE3 /* Kahoot_HackathonApp.swift in Sources */,
+				3AFD0CEC266B1758000EFAE3 /* Quiz.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AFD0CE6266B1712000EFAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AFD0CE7266B1712000EFAE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AFD0CE9266B1712000EFAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kahoot Hackathon/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8Y52G2S7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kahoot Hackathon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ang-Jun-Ray.Kahoot-Hackathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AFD0CEA266B1712000EFAE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kahoot Hackathon/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8Y52G2S7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kahoot Hackathon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ang-Jun-Ray.Kahoot-Hackathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AFD0CD4266B170F000EFAE3 /* Build configuration list for PBXProject "Kahoot Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFD0CE6266B1712000EFAE3 /* Debug */,
+				3AFD0CE7266B1712000EFAE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AFD0CE8266B1712000EFAE3 /* Build configuration list for PBXNativeTarget "Kahoot Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFD0CE9266B1712000EFAE3 /* Debug */,
+				3AFD0CEA266B1712000EFAE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AFD0CD1266B170F000EFAE3 /* Project object */;
+}
