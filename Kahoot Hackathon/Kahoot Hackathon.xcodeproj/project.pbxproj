@@ -14,9 +14,11 @@
 		3AFD0CE4266B1712000EFAE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFD0CE3266B1712000EFAE3 /* Preview Assets.xcassets */; };
 		3AFD0CEC266B1758000EFAE3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CEB266B1758000EFAE3 /* Quiz.swift */; };
 		3AFD0CF0266B1DB3000EFAE3 /* ResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CEF266B1DB3000EFAE3 /* ResultSheet.swift */; };
+		D54F54BD804B18E01DA4519B /* libPods-Kahoot Hackathon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A053F6346CF5CC4BA3B48037 /* libPods-Kahoot Hackathon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214DA18909469CF28B53700C /* Pods-Kahoot Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kahoot Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Kahoot Hackathon/Pods-Kahoot Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		3AD3BCA126704EB0006F2C3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AFD0CD9266B170F000EFAE3 /* Kahoot Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kahoot Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kahoot_HackathonApp.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		3AFD0CE5266B1712000EFAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AFD0CEB266B1758000EFAE3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		3AFD0CEF266B1DB3000EFAE3 /* ResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSheet.swift; sourceTree = "<group>"; };
+		9C6E34DB7B235F222EF57AF3 /* Pods-Kahoot Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kahoot Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Kahoot Hackathon/Pods-Kahoot Hackathon.release.xcconfig"; sourceTree = "<group>"; };
+		A053F6346CF5CC4BA3B48037 /* libPods-Kahoot Hackathon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kahoot Hackathon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54F54BD804B18E01DA4519B /* libPods-Kahoot Hackathon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				3AFD0CDB266B170F000EFAE3 /* Kahoot Hackathon */,
 				3AFD0CDA266B170F000EFAE3 /* Products */,
+				8C467D88E604B6E7FF0AB8C2 /* Pods */,
+				687C7C4759BC2B3574A42851 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		687C7C4759BC2B3574A42851 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A053F6346CF5CC4BA3B48037 /* libPods-Kahoot Hackathon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C467D88E604B6E7FF0AB8C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				214DA18909469CF28B53700C /* Pods-Kahoot Hackathon.debug.xcconfig */,
+				9C6E34DB7B235F222EF57AF3 /* Pods-Kahoot Hackathon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AFD0CE8266B1712000EFAE3 /* Build configuration list for PBXNativeTarget "Kahoot Hackathon" */;
 			buildPhases = (
+				65E9F943C20F7F94C1922925 /* [CP] Check Pods Manifest.lock */,
 				3AFD0CD5266B170F000EFAE3 /* Sources */,
 				3AFD0CD6266B170F000EFAE3 /* Frameworks */,
 				3AFD0CD7266B170F000EFAE3 /* Resources */,
+				31BD20709A5266B11C17A1E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31BD20709A5266B11C17A1E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kahoot Hackathon/Pods-Kahoot Hackathon-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kahoot Hackathon/Pods-Kahoot Hackathon-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kahoot Hackathon/Pods-Kahoot Hackathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65E9F943C20F7F94C1922925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kahoot Hackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AFD0CD5266B170F000EFAE3 /* Sources */ = {
@@ -276,6 +345,7 @@
 		};
 		3AFD0CE9266B1712000EFAE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214DA18909469CF28B53700C /* Pods-Kahoot Hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +368,7 @@
 		};
 		3AFD0CEA266B1712000EFAE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6E34DB7B235F222EF57AF3 /* Pods-Kahoot Hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
