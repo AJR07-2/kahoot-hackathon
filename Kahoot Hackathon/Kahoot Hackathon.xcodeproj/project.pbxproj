@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AD3BCA226704EB0006F2C3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3BCA126704EB0006F2C3C /* GoogleService-Info.plist */; };
 		3AFD0CDD266B170F000EFAE3 /* Kahoot_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */; };
 		3AFD0CDF266B170F000EFAE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD0CDE266B170F000EFAE3 /* ContentView.swift */; };
 		3AFD0CE1266B1712000EFAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFD0CE0266B1712000EFAE3 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AD3BCA126704EB0006F2C3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AFD0CD9266B170F000EFAE3 /* Kahoot Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kahoot Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFD0CDC266B170F000EFAE3 /* Kahoot_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kahoot_HackathonApp.swift; sourceTree = "<group>"; };
 		3AFD0CDE266B170F000EFAE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				3AFD0CEB266B1758000EFAE3 /* Quiz.swift */,
 				3AFD0CE0266B1712000EFAE3 /* Assets.xcassets */,
 				3AFD0CE5266B1712000EFAE3 /* Info.plist */,
+				3AD3BCA126704EB0006F2C3C /* GoogleService-Info.plist */,
 				3AFD0CE2266B1712000EFAE3 /* Preview Content */,
 			);
 			path = "Kahoot Hackathon";
@@ -134,6 +137,7 @@
 			files = (
 				3AFD0CE4266B1712000EFAE3 /* Preview Assets.xcassets in Resources */,
 				3AFD0CE1266B1712000EFAE3 /* Assets.xcassets in Resources */,
+				3AD3BCA226704EB0006F2C3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
