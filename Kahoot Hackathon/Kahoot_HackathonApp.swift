@@ -15,4 +15,3 @@ struct Kahoot_HackathonApp: App {
         }
     }
 }
-q
