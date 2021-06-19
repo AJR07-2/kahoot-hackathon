@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 @main
 struct Kahoot_HackathonApp: App {
@@ -16,3 +15,4 @@ struct Kahoot_HackathonApp: App {
         }
     }
 }
+q
