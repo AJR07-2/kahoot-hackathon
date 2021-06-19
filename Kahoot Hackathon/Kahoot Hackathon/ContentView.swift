@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State var quiz = Quiz(questions:
-        [Questions(title: "How many jars of Nutella can YJ eat?", options: ["10 Jars", "15 Jars", "20 Jars", "100 Jars"], correct: 3),
-        Questions(title: "How many times has Chew Caven not submited the attendence form?", options: ["5 times", "8 times" , "10 times", "11 times"], correct: 1),
-        Questions(title: "Which is the best language?", options: ["Python","UIKit", "SwiftUI", "C++"], correct: 2),
-        Questions(title: "When does WWDC21 start", options: ["Friday 12:00am", "Sunday 1:00am", "Friday 1:00pm", "Monday 1:00am"], correct: 3)
-    ])
+                            [Questions(title: "How many jars of Nutella can YJ eat?", options: ["10 Jars", "15 Jars", "20 Jars", "100 Jars"], correct: 3),
+                             Questions(title: "How many times has Chew Caven not submited the attendence form?", options: ["5 times", "8 times" , "10 times", "11 times"], correct: 1),
+                             Questions(title: "Which is the best language?", options: ["Python","UIKit", "SwiftUI", "C++"], correct: 2),
+                             Questions(title: "When does WWDC21 start", options: ["Friday 12:00am", "Sunday 1:00am", "Friday 1:00pm", "Monday 1:00am"], correct: 3)
+                            ])
     
     @State private var showingCorrect = false
     @State private var showingWrong = false
     let colourChoice = [Color.red, Color.yellow, Color.orange, Color.green, Color.purple]
+    let symbolChoice = ["square.fill", "circle.fill", "triangle.fill", "diamond.fill"]
     
     var body: some View {
         let currentQuestion = generateCurrentQuestion(quiz: quiz)
@@ -33,7 +34,7 @@ struct ContentView: View {
                         
                         HStack{
                             ForEach(optionArray, id: \.self){ option in
-                                Button(option, action: {
+                                Button(action: {
                                     //show sheet accordingly
                                     if(option == currentQuestion.options[currentQuestion.correct/2][currentQuestion.correct%2]){
                                         showingCorrect = true
@@ -50,11 +51,15 @@ struct ContentView: View {
                                         //quiz is over
                                         quiz.quizFinished = true
                                     }
-                                })
-                                .frame(width: 150, height: 100, alignment: .center)
+                                }){
+                                    Label(
+                                        title: { Text(option) },
+                                        icon: { Image(systemName: symbolChoice[Int.random(in: 0..<4)])}
+                                    )}
+                                .foregroundColor(.black)
+                                .frame(width: 175, height: 125, alignment: .center)
                                 .font(.title)
                                 .background(colourChoice[Int.random(in: 0..<5)])
-                                
                                 .sheet(isPresented: $showingCorrect) {
                                     ResultSheet(correct: true)
                                 }
