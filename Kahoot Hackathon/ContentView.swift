@@ -24,6 +24,8 @@ struct ContentView: View {
         let currentQuestion = generateCurrentQuestion(quiz: quiz)
         
         VStack{
+            ProgressView(value: Double(quiz.currentQuestion), total: Double(quiz.questions.count))
+                .frame(width: 250, height: 20, alignment: .center)
             if(!quiz.quizFinished){ //if quiz is not finished
                 Text(currentQuestion.question)
                     .padding()
