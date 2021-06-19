@@ -9,13 +9,22 @@ import Foundation
 
 struct Questions{
     var question: String
-    var options: [String]
+    var options: [[String]] = []
     var correct: Int
     
     init(title: String, options: [String], correct: Int) {
         self.question = title
-        self.options = options
         self.correct = correct
+        
+        //sort the questions out properly so that the display can display it correctly
+        for n in 0..<options.count{
+            if(n % 2 == 1){
+                self.options.append([options[n-1], options[n]])
+            }
+        }
+        if(options.count % 2 == 1){
+            self.options.append([options[options.count - 1]])
+        }
     }
 }
 
@@ -26,9 +35,9 @@ struct Quiz{
     var quizFinished:Bool
     
     init(questions: [Questions]){
-        self.questions = questions
         self.score = 0
         self.currentQuestion = 0
         self.quizFinished = false
+        self.questions = questions
     }
 }

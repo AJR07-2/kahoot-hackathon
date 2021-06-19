@@ -17,7 +17,7 @@ struct ContentView: View {
     
     @State private var showingCorrect = false
     @State private var showingWrong = false
-    let colourChoice = [Color.red, Color.yellow, Color.orange, Color.green, Color.blue, Color.purple]
+    let colourChoice = [Color.red, Color.yellow, Color.orange, Color.green, Color.purple]
     
     var body: some View {
         let currentQuestion = generateCurrentQuestion(quiz: quiz)
@@ -28,36 +28,43 @@ struct ContentView: View {
                     .padding()
                     .font(.system(size: 30, weight: .heavy, design: .default))
                 
-                List(quiz.questions[quiz.currentQuestion].options, id: \.self){ option in
-                    Button(option, action: {
-                        //show sheet accordingly
-                        if(option == currentQuestion.options[currentQuestion.correct]){
-                            showingCorrect = true
-                            showingWrong = false
-                            quiz.score += 1
-                        } else{
-                            showingWrong = true
-                            showingCorrect = false
-                        }
+                VStack(alignment: .center, spacing: 10, content: {
+                    ForEach(quiz.questions[quiz.currentQuestion].options, id: \.self){ optionArray in
                         
-                        //increment the current question number
-                        quiz.currentQuestion += 1
-                        if(quiz.currentQuestion == quiz.questions.count){
-                            //quiz is over
-                            quiz.quizFinished = true
+                        HStack{
+                            ForEach(optionArray, id: \.self){ option in
+                                Button(option, action: {
+                                    //show sheet accordingly
+                                    if(option == currentQuestion.options[currentQuestion.correct/2][currentQuestion.correct%2]){
+                                        showingCorrect = true
+                                        showingWrong = false
+                                        quiz.score += 1
+                                    } else{
+                                        showingWrong = true
+                                        showingCorrect = false
+                                    }
+                                    
+                                    //increment the current question number
+                                    quiz.currentQuestion += 1
+                                    if(quiz.currentQuestion == quiz.questions.count){
+                                        //quiz is over
+                                        quiz.quizFinished = true
+                                    }
+                                })
+                                .frame(width: 150, height: 100, alignment: .center)
+                                .font(.title)
+                                .background(colourChoice[Int.random(in: 0..<5)])
+                                
+                                .sheet(isPresented: $showingCorrect) {
+                                    ResultSheet(correct: true)
+                                }
+                                .sheet(isPresented: $showingWrong) {
+                                    ResultSheet(correct: false)
+                                }
+                            }
                         }
-                    })
-                    .frame(width: 350, height: 100, alignment: .center)
-                    .font(.title)
-                    .background(colourChoice[Int.random(in: 0..<6)])
-                    
-                    .sheet(isPresented: $showingCorrect) {
-                        ResultSheet(correct: true)
                     }
-                    .sheet(isPresented: $showingWrong) {
-                        ResultSheet(correct: false)
-                    }
-                }
+                })
             } else {
                 Image("party")
                     .resizable()
