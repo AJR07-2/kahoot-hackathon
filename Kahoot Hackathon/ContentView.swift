@@ -22,10 +22,8 @@ struct ContentView: View {
     
     var body: some View {
         let currentQuestion = generateCurrentQuestion(quiz: quiz)
-        
+
         VStack{
-            ProgressView(value: Double(quiz.currentQuestion), total: Double(quiz.questions.count))
-                .frame(width: 250, height: 20, alignment: .center)
             if(!quiz.quizFinished){ //if quiz is not finished
                 Text(currentQuestion.question)
                     .padding()
@@ -63,10 +61,10 @@ struct ContentView: View {
                                 .font(.title)
                                 .background(colourChoice[Int.random(in: 0..<5)])
                                 .sheet(isPresented: $showingCorrect) {
-                                    ResultSheet(correct: true)
+                                    ResultSheet(correct: true, progress: Double(quiz.currentQuestion/quiz.question.count))
                                 }
                                 .sheet(isPresented: $showingWrong) {
-                                    ResultSheet(correct: false)
+                                    ResultSheet(correct: false, progress: Double(quiz.currentQuestion/quiz.question.count))
                                 }
                             }
                         }
@@ -82,6 +80,7 @@ struct ContentView: View {
                 Button(action: {
                     quiz.quizFinished = false
                     quiz.currentQuestion = 0
+                    progress = 0.0
                     showingWrong = false
                     showingCorrect = false
                 }, label: {
